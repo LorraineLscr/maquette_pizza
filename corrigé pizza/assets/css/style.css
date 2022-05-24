@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'Amatic';
+    src: url('../font/amaticsc.woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic';
+    background-color: black;
+    --couleurHot: rgb(248, 51, 51);
+    --couleurNews: rgb(212, 212, 212);
+}
+
+nav {
+    min-width: 100%;
+    position: fixed;
+    max-width: 1920px;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav label img {
+    width: 1.7rem;
+    padding: .3rem;
+    cursor: pointer;
+}
+
+#burger {
+    display: none;
+}
+
+#burger:checked~#navbar {
+    transition: all .7s;
+    max-height: 600px;
+}
+
+#navbar {
+    position: absolute;
+    top: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0;
+    padding: 0rem;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+#navbar li {
+    margin: 0;
+    padding: .3rem 0 .3rem 1rem;
+    list-style: none;
+
+}
+
+.navMenu {
+    margin: 0 auto;
+    width: 90vw;
+    outline: .01rem white solid;
+    outline-offset: -1px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+ul{
+    padding-inline-start:  0;
+}
+.navMenu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navMenu li {
+    list-style: none;
+    margin: 0;
+    padding: .8rem 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.navMenu li:hover {
+    cursor: pointer;
+    background-color: rgb(248, 51, 51);
+}
+
+nav:hover {
+    transition: all .7s;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#menu,
+#about,
+
+#contact,
+#map,
+.timeHeader {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    padding: .3rem 1.3rem;
+}
+
+#navbar li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 70vh;
+    filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+}
+
+
+.timeHeader>span {
+    position: relative;
+    left: .8rem;
+    top: -3rem;
+    margin-bottom: -3rem;
+    color: white;
+    font-size: 1em;
+    padding: .3rem 1.3rem;
+    background-color: black;
+}
+
+.logoHeader {
+    text-align: center;
+    left: 0px;
+    top: 0px;
+}
+
+.logoHeader>span {
+    color: white;
+    font-size: 4em;
+}
+
+.logoHeader>p>a {
+    color: white;
+    font-size: 1.5em;
+    padding: .3rem 1.3rem;
+    background-color: black;
+    text-decoration: none;
+}
+
+.logoHeader>p>a:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+#menu,
+#about,
+#map,
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.theMenu {
+    display: flex;
+    justify-content: center;
+}
+
+#tabs-1,
+#tabs-2,
+#tabs-3 {
+    margin: 0 auto 5rem auto;
+
+    width: 90vw;
+    background-color: white;
+    padding: 0 .8rem;
+    box-sizing: border-box;
+}
+
+/* selecteur tordu */
+.piz:hover~#tabs-1 {
+    display: block;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 200;
+    color: white;
+    font-size: 3em;
+}
+
+.price {
+    font-weight: 200;
+    color: white;
+    padding: .3rem;
+    margin-right: .8rem;
+    float: right;
+    border-radius: .3rem;
+    background-color: rgb(136, 136, 136);
+}
+
+.hot {
+    font-weight: 200;
+    color: white;
+    padding: .3rem;
+    margin-left: .8rem;
+    border-radius: .3rem;
+    background-color: var(--couleurHot);
+}
+
+.new {
+    font-weight: 200;
+    color: black;
+    padding: .3rem;
+    margin-left: .8rem;
+    border-radius: .3rem;
+    background-color: var(--couleurNews);
+}
+
+#about {
+    background-color: rgb(175, 99, 99);
+    color: white;
+}
+
+.aboutContent {
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+.parentChefImg{
+    position: relative;
+    height: 140px;
+}
+.parentChefImg img{
+    position: absolute;
+    right: 1rem;
+}
+
+
+.chef {
+    float: right;
+    width: 200px;
+    border-radius: 300px / 200px;
+    margin-bottom: 2rem;
+}
+
+.restaurant {
+    width: 90vw;
+}
+
+.open {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 3rem;
+}
+
+.open div {
+    width: 100%;
+}
+
+#map {
+    overflow: hidden;
+}
+
+#contact {
+    background-color: rgb(136, 136, 136);
+}
+
+.formContact {
+    margin: 0 auto;
+    color: white;
+    width: 90vw;
+}
+
+.fyi {
+    background-color: black;
+    padding: .1rem .3rem;
+}
+
+.formContact input {
+    width: 100%;
+    padding: .8rem 0;
+    font-family: 'Amatic';
+    font-size: 1.3rem;
+}
+
+.contactBtn {
+    padding: .8rem 0;
+    width: 90vw;
+    font-family: 'Amatic';
+    font-size: 1.3rem;
+    border: 0;
+    background-color: rgb(212, 212, 212);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.7rem;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+#gotop{
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    bottom: -6rem;
+    right: 1rem;
+}
+@media screen and (min-width:576px) {
+    nav {
+        justify-content: flex-start;
+
+    }
+
+    nav label {
+        display: none;
+    }
+
+    #navbar {
+        position: static;
+        padding: 0rem;
+        max-height: 600px;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    #navbar li {
+        display: inline-block;
+        margin: 0;
+        padding: .3rem;
+    }
+
+    #navbar li:hover {
+        background-color: var(--couleurHot);
+    }
+
+    .navMenu,
+    .aboutContent,
+    .restaurant,
+    .formContact,
+    #Pizza,
+    .contactBtn,
+    #Pasta,
+    #Starter {
+
+        max-width: 1400px;
+        width: 65vw;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+    .logoHeader>span {
+        font-size: 5em;
+    }
+    .navMenu,
+    .aboutContent,
+    #tabs-1,
+    #tabs-2,
+    #tabs-3 {
+        max-width: 1400px;
+        width: 65vw;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+}

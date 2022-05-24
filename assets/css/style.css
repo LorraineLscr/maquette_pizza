@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "amaticsc";
+    src: url("../font/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: "amaticscbold";
+    src: url("../font/AmaticSC-Bold.ttf");
+}
+
+* {
+    font-family: "amaticsc", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* partie header*/
+
+header nav {
+    display: none;
+}
+
+#headerImg {
+    position: relative;
+    height: 80vh;
+    /*border: red 1px solid;*/
+    overflow: hidden;
+    background-image: url("../img/pizza.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#headerImg>img {
+    width: 100%;
+}
+
+#logo {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.letme {
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+}
+
+.open {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#letme,
+#open {
+    justify-content: center;
+}
+
+
+/* section the menu*/
+
+main {
+    background-color: black;
+}
+
+#themenu h2 {
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+    font-weight: lighter;
+    height: 15vh;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+#themenu {
+    background-color: black;
+    padding: 1rem;
+    margin-bottom: 7rem;
+}
+
+
+/* section sous menu*/
+
+.plat {
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    font-weight: 100;
+    padding-top: 1rem;
+}
+
+.prix {
+    font-size: 2rem;
+    color: white;
+    background-color: #616160;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style: none;
+    font-size: 2.5rem;
+    justify-content: space-around;
+    border-width: 0.1rem;
+    border-color: rgb(184, 181, 181);
+}
+
+#themenu h3 {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1rem;
+}
+
+#themenu h4 {
+    font-size: 2rem;
+    color: grey;
+    background-color: white;
+    padding: 1rem;
+}
+
+.sousmenu {
+    background-color: rgb(12, 4, 4);
+    width: 33%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sousmenu:hover {
+    background-color: red;
+}
+
+.pizza {
+    margin: 1%;
+    border-width: 0.1rem;
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
+}
+
+.hot {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #f54434;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+h3 .prix {
+    margin-left: 4rem;
+}
+
+.new {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: black;
+    background-color: #9e9e9f;
+    font-weight: bolder;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+
+
+/* section About */
+
+#about h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: lighter;
+    height: 15vh;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    background-color: #8b5f5b;
+}
+
+#about p {
+    background-color: #8b5f5b;
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+
+#hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hoursleft {
+    display: flex;
+    flex-direction: column;
+}
+
+.hoursright {
+    display: flex;
+    flex-direction: column;
+    padding-right: 6rem;
+}
+
+#hours span{
+    margin-bottom: 1rem;
+}
+
+#about div {
+    background-color: #8b5f5b;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.thechef {
+    font-family: "amaticscbold";
+}
+
+.restau {
+    width: 100%;
+    margin: auto;
+}
+
+.restau img {
+    width: 100%;
+}
+
+.parentChefImg {
+    position: relative;
+    height: 140px;
+}
+
+.parentChefImg img {
+    position: absolute;
+    right: 1rem;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#about h3 {
+    background-color: #8b5f5b;
+    color: white;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#about {
+    background-color: #8b5f5b;
+}
+
+
+/* section Contact */
+
+#contact {
+    background-color: #6c7a82;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: lighter;
+    height: 15vh;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    background-color: #6c7a82;
+}
+
+.infocontact {
+    color: white;
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.infocontact p{
+margin-top: 1rem;
+}
+
+.fyi {
+    background-color: rgb(12, 4, 4);
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.reserve {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.atable {
+    font-size: 2rem;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    margin-block: 0.5rem;
+}
+
+#send {
+    border: none;
+    width: 102%;
+    background-color: #cccccc;
+}
+
+#contact form {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+#contact form>div {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+@media screen and (min-width:576px) {
+    header nav {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    header ul {
+        display: flex;
+        list-style-type: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 2rem;
+        align-items: center;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        padding: 0 .5rem;
+    }
+
+    #themenu {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    #about {
+        padding: 0 10rem 1rem 10rem;
+    }
+
+}
